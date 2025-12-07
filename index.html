@@ -4,45 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Soccrevival</title>
-  <!-- Link to the Soft Marshmallow web-font -->
+  <!-- Soft Marshmallow font -->
   <link href="https://fonts.cdnfonts.com/css/soft-marshmallow" rel="stylesheet">
   <style>
     body {
+      margin: 0;
+      height: 100vh;
+      background-color: #f0f0f0;
+      font-family: 'Soft Marshmallow', sans-serif;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f0f0f0;
-      text-align: center;
-      font-family: 'Soft Marshmallow', sans-serif;
     }
+
+    .container {
+      display: flex;
+      flex-direction: row;       /* text left, image right */
+      align-items: center;
+      text-align: left;
+      gap: 40px;                 /* space between text and image */
+      padding: 20px;
+    }
+
     h1 {
       font-size: 3em;
-      margin: 0.2em 0;
+      margin: 0;
     }
+
     p {
       font-size: 1.5em;
-      margin: 0.2em 0;
+      margin: 10px 0;
     }
+
     .bottom-text {
-      font-size: 0.8em;      /* smaller text */
-      margin-top: 10px;
+      font-size: 0.8em;
+      color: #555;
     }
-      }
-    .main-text {
-      font-size: 1.7em;      /*text*/
-      margin-top: 10px;
+
+    .side-image {
+      width: 300px;              /* adjust image size here */
+      border-radius: 15px;
     }
   </style>
 </head>
 <body>
-  <div>
-    <h1>Welcome to the official socc reival website!</h1>
-    <p>the fanmade socc revival</p>
-    <p class="bottom-text">Now i now your first question is</p>
-    <h1 class="main-text">What is socc?</h1>
+
+  <div class="container">
+    <div class="text">
+      <h1>Welcome to Soccrevival.space!</h1>
+      <p>This is my new website hosted on GitHub Pages.</p>
+      <p class="bottom-text">Here’s some smaller text at the bottom.</p>
+    </div>
+
+    <!-- REPLACE THIS IMAGE URL WITH YOUR OWN -->
+    <img src="https://play-lh.googleusercontent.com/E5q9miPBh82_irOO1xxHB26I07ogRP8f7xULI08NqWqiIzilKB8_jB-aAHrdqqRem38" class="side-image">
   </div>
+
 </body>
 </html>
