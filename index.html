@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Soccrevival</title>
-  <!-- Link to the Soft Marshmallow web‑font -->
+  <!-- Link to the Soft Marshmallow web-font -->
   <link href="https://fonts.cdnfonts.com/css/soft-marshmallow" rel="stylesheet">
   <style>
     body {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
       background-color: #f0f0f0;
       text-align: center;
-      /* Use Soft Marshmallow font first, fallback to sans-serif */
       font-family: 'Soft Marshmallow', sans-serif;
     }
     h1 {
@@ -26,12 +26,18 @@
       font-size: 1.5em;
       margin: 0.2em 0;
     }
+    .bottom-text {
+      font-size: 0.8em;      /* smaller text */
+      margin-top: 10px;
+      color: #555;            /* optional lighter color */
+    }
   </style>
 </head>
 <body>
   <div>
     <h1>Welcome to the official socc reival website!</h1>
     <p>the fanmade socc revival</p>
+    <p class="bottom-text">Here’s some smaller text at the bottom.</p>
   </div>
 </body>
 </html>
