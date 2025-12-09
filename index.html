@@ -13,7 +13,7 @@
       font-family: Arial, sans-serif;
       display: flex;
       flex-direction: column;
-      align-items: flex-start; /* EVERYTHING aligns left */
+      align-items: flex-start;
     }
 
     /* Title at top-left */
@@ -33,10 +33,11 @@
     .container {
       display: flex;
       flex-direction: row;
-      text-align: left;
+      width: 100%;
+      padding: 0 20px;
       gap: 40px;
-      padding: 0 20px;        /* Aligns text with title indent */
       margin-top: 10px;
+      align-items: flex-start;
     }
 
     p {
@@ -63,9 +64,13 @@
       color: #222;
     }
 
+    /* UPDATED IMAGE STYLE */
     .side-image {
-      width: 300px;
+      width: 400px;        /* Bigger image */
+      max-width: 45vw;     /* Prevents breaking layout */
+      margin-left: auto;   /* Pushes image to the far right */
       border-radius: 15px;
+      object-fit: contain;
     }
   </style>
 </head>
@@ -77,7 +82,7 @@
   <!-- Subtitle -->
   <p class="subtitle">This is my new website hosted on GitHub Pages.</p>
 
-  <!-- TEXT NOW ALIGNED WITH TITLE -->
+  <!-- Main content aligned with title -->
   <div class="container">
     <div class="text">
       <p class="bottom-text">Here’s some smaller text at the bottom.</p>
@@ -91,8 +96,11 @@
       <p class="bottom-text3">Here’s some smaller text at the bottom. (3)</p>
     </div>
 
-    <!-- IMAGE STAYS ON THE RIGHT -->
-    <img src="https://play-lh.googleusercontent.com/E5q9miPBh82_irOO1xxHB26I07ogRP8f7xULI08NqWqiIzilKB8_jB-aAHrdqqRem38" class="side-image">
+    <!-- Right-side image -->
+    <img
+      src="https://play-lh.googleusercontent.com/E5q9miPBh82_irOO1xxHB26I07ogRP8f7xULI08NqWqiIzilKB8_jB-aAHrdqqRem38"
+      class="side-image"
+    >
   </div>
 
 </body>
