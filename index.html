@@ -12,25 +12,30 @@
       background-color: #f0f0f0;
       font-family: Arial, sans-serif;
       display: flex;
-      flex-direction: column; /* Title sticks to top */
-      align-items: center;
+      flex-direction: column;
+      align-items: flex-start; /* EVERYTHING aligns left */
     }
 
-    /* Title placed top-left */
+    /* Title at top-left */
     .page-title {
-      font-size: 4em;        /* Big but not too big */
+      font-size: 4em;
       font-weight: 900;
-      margin: 20px;
-      align-self: flex-start; /* Moves it to top-left */
+      margin: 20px 20px 0 20px;
+    }
+
+    /* Subtitle under the title */
+    .subtitle {
+      font-size: 1.5em;
+      margin: 5px 20px 20px 20px;
+      color: #333;
     }
 
     .container {
       display: flex;
       flex-direction: row;
-      align-items: center;
       text-align: left;
       gap: 40px;
-      padding: 20px;
+      padding: 0 20px;        /* Aligns text with title indent */
       margin-top: 10px;
     }
 
@@ -44,7 +49,6 @@
       color: #555;
     }
 
-    /* Third small text is now bold + bigger */
     .bottom-text3 {
       font-size: 1.1em;
       font-weight: bold;
@@ -67,13 +71,15 @@
 </head>
 <body>
 
-  <!-- New big title on top-left -->
+  <!-- Top-left title -->
   <h1 class="page-title">Welcome to Soccrevival.space!</h1>
 
+  <!-- Subtitle -->
+  <p class="subtitle">This is my new website hosted on GitHub Pages.</p>
+
+  <!-- TEXT NOW ALIGNED WITH TITLE -->
   <div class="container">
     <div class="text">
-      <p>This is my new website hosted on GitHub Pages.</p>
-
       <p class="bottom-text">Here’s some smaller text at the bottom.</p>
 
       <p class="big-bold">This is the new BIG bold line!</p>
@@ -82,10 +88,10 @@
 
       <p class="big-bold2">This is the SECOND bold line!</p>
 
-      <!-- Now bold + slightly bigger -->
       <p class="bottom-text3">Here’s some smaller text at the bottom. (3)</p>
     </div>
 
+    <!-- IMAGE STAYS ON THE RIGHT -->
     <img src="https://play-lh.googleusercontent.com/E5q9miPBh82_irOO1xxHB26I07ogRP8f7xULI08NqWqiIzilKB8_jB-aAHrdqqRem38" class="side-image">
   </div>
 
