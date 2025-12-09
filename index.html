@@ -12,8 +12,16 @@
       background-color: #f0f0f0;
       font-family: Arial, sans-serif;
       display: flex;
-      justify-content: center;
+      flex-direction: column; /* Title sticks to top */
       align-items: center;
+    }
+
+    /* Title placed top-left */
+    .page-title {
+      font-size: 4em;        /* Big but not too big */
+      font-weight: 900;
+      margin: 20px;
+      align-self: flex-start; /* Moves it to top-left */
     }
 
     .container {
@@ -23,30 +31,31 @@
       text-align: left;
       gap: 40px;
       padding: 20px;
+      margin-top: 10px;
     }
 
-    h1 {
-      font-size: 3em;
-      margin: 0;
-    }
-
-    /* Reduced spacing between all paragraphs */
     p {
       margin: 2px 0;
     }
 
     .bottom-text,
-    .bottom-text2,
-    .bottom-text3 {
+    .bottom-text2 {
       font-size: 0.8em;
       color: #555;
+    }
+
+    /* Third small text is now bold + bigger */
+    .bottom-text3 {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #333;
     }
 
     .big-bold,
     .big-bold2 {
       font-size: 2.2em;
       font-weight: 900;
-      margin: 4px 0; /* tight spacing */
+      margin: 4px 0;
       color: #222;
     }
 
@@ -58,9 +67,11 @@
 </head>
 <body>
 
+  <!-- New big title on top-left -->
+  <h1 class="page-title">Welcome to Soccrevival.space!</h1>
+
   <div class="container">
     <div class="text">
-      <h1>Welcome to Soccrevival.space!</h1>
       <p>This is my new website hosted on GitHub Pages.</p>
 
       <p class="bottom-text">Here’s some smaller text at the bottom.</p>
@@ -71,6 +82,7 @@
 
       <p class="big-bold2">This is the SECOND bold line!</p>
 
+      <!-- Now bold + slightly bigger -->
       <p class="bottom-text3">Here’s some smaller text at the bottom. (3)</p>
     </div>
 
