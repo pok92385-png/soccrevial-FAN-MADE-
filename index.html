@@ -13,7 +13,7 @@
       font-family: Arial, sans-serif;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: flex-start; /* EVERYTHING aligns left */
     }
 
     /* Title at top-left */
@@ -26,18 +26,24 @@
     /* Subtitle under the title */
     .subtitle {
       font-size: 1.5em;
-      margin: 5px 20px 20px 20px;
+      margin: 5px 20px 10px 20px;
       color: #333;
+    }
+
+    /* Image under subtitle */
+    .subtitle-image {
+      width: 300px; /* adjust as needed */
+      margin: 10px 20px;
+      border-radius: 10px;
     }
 
     .container {
       display: flex;
       flex-direction: row;
-      width: 100%;
-      padding: 0 20px;
+      text-align: left;
       gap: 40px;
+      padding: 0 20px;
       margin-top: 10px;
-      align-items: flex-start;
     }
 
     p {
@@ -64,13 +70,9 @@
       color: #222;
     }
 
-    /* UPDATED IMAGE STYLE */
     .side-image {
-      width: 400px;        /* Bigger image */
-      max-width: 45vw;     /* Prevents breaking layout */
-      margin-left: auto;   /* Pushes image to the far right */
+      width: 300px;
       border-radius: 15px;
-      object-fit: contain;
     }
   </style>
 </head>
@@ -82,7 +84,10 @@
   <!-- Subtitle -->
   <p class="subtitle">This is my new website hosted on GitHub Pages.</p>
 
-  <!-- Main content aligned with title -->
+  <!-- Image under subtitle -->
+  <img src="https://i.postimg.cc/23N3HqCv/1000535238.png" class="subtitle-image" alt="Subtitle Image">
+
+  <!-- TEXT ALIGNED LEFT, IMAGE STILL ON RIGHT -->
   <div class="container">
     <div class="text">
       <p class="bottom-text">Here’s some smaller text at the bottom.</p>
@@ -96,11 +101,7 @@
       <p class="bottom-text3">Here’s some smaller text at the bottom. (3)</p>
     </div>
 
-    <!-- Right-side image -->
-    <img
-      src="https://play-lh.googleusercontent.com/E5q9miPBh82_irOO1xxHB26I07ogRP8f7xULI08NqWqiIzilKB8_jB-aAHrdqqRem38"
-      class="side-image"
-    >
+    <img src="https://play-lh.googleusercontent.com/E5q9miPBh82_irOO1xxHB26I07ogRP8f7xULI08NqWqiIzilKB8_jB-aAHrdqqRem38" class="side-image" alt="Side Image">
   </div>
 
 </body>
