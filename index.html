@@ -26,15 +26,17 @@
     /* Subtitle under the title */
     .subtitle {
       font-size: 1.5em;
-      margin: 5px 20px 10px 20px;
+      margin: 0 20px 5px 20px;
       color: #333;
     }
 
-    /* Image under subtitle */
+    /* Bigger subtitle image, no extra gaps */
     .subtitle-image {
-      width: 300px; /* adjust as needed */
-      margin: 10px 20px;
+      width: 600px; /* much bigger */
+      max-width: 100%; /* ensures it fits on smaller screens */
+      margin: 0 20px; /* no top/bottom gap */
       border-radius: 10px;
+      display: block;
     }
 
     .container {
@@ -84,7 +86,7 @@
   <!-- Subtitle -->
   <p class="subtitle">This is my new website hosted on GitHub Pages.</p>
 
-  <!-- Image under subtitle -->
+  <!-- Bigger subtitle image with no gaps -->
   <img src="https://i.postimg.cc/23N3HqCv/1000535238.png" class="subtitle-image" alt="Subtitle Image">
 
   <!-- TEXT ALIGNED LEFT, IMAGE STILL ON RIGHT -->
